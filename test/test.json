@@ -1,7 +1,5 @@
-{"hello":123
- 
- ,
- 
- 
-   "goodbye": true
+{
+	"hello": 123,
+
+	"goodbye": true
 }
