@@ -1,57 +1,48 @@
-title: "CSS Battle #<number> – <Problem Name>"
+title: "CSS Battle #NUMBER – NAME"
 labels: ["CSS Battles"]
 body:
   - type: input
-    id: number
+    id: link
     attributes:
-      label: Problem Number
-      description: The number of the problem being discussed (in digits)
-      placeholder: Problem number
-    validations:
-      required: true
-  - type: input
-    id: name
-    attributes:
-      label: Problem Name
-      description: The name of the problem being discussed
-      placeholder: Problem name
+      label: "Link to battle:"
+      description: Replace NUMBER with current battle number      
+      value: |
+       [Lets battle! ⚔️](https://cssbattle.dev/play/NUMBER)
     validations:
       required: true
   - type: markdown
-    attributes:
+    attributes: 
       value: |
-        Here is the puzzle: https://cssbattle.dev/play/<number>
-
-        Let's see the solutions!
-  - type: markdown
+        **That’s all! You can now click the “Start discussion” button.** :smile:
+        **Please note:** Don't change text areas - they need to stay that way to be visible after creating discussion
+  - type: textarea
     attributes:
-      value: <hr />
-  - type: markdown
-    attributes:
-      value: "## Sharing Your Solutions"
-  - type: markdown
-    attributes:
+      label:  "Copy the code block below to format your comment on the discussion thread:"
+      description: Solution template for players
       value: |
-        When posting your answers, you can save members from being spoiled by wrapping your code in the following:
-
-            <details>
-            <summary>Description – <strong>score {characters}</strong></summary><br />
-            <!-- Has to be followed by an empty line! -->
-
-            ```html
-            Your CSSBattles.dev code here!
-            ```
-            </details>
-
-        This will result in a nice hidden bit like so:
-
+        ```html
         <details>
         <summary>Description – <strong>score {characters}</strong></summary><br />
         <!-- Has to be followed by an empty line! -->
 
-        ```html
-        Your CSSBattles.dev code here!
-        ```
-        </details>
+        <!-- remove + character -->
+        +```html
+        Your CSSBattles.dev code here! ⚔️
+        +```
 
-        Feel free to copy/paste the above code into a comment!
+        </details>
+        ```
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: "What others will see:"
+      description: Solution preview
+      value: |
+        This will result in a nice hidden bit like so:<br />
+        <details>
+        <summary>Description – <strong>score {characters}</strong></summary><br />
+        Your CSSBattles.dev code here! ⚔️
+        </details>
+    validations:
+      required: true
