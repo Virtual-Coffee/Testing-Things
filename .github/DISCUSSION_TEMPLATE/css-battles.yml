@@ -14,7 +14,15 @@ body:
     attributes: 
       value: |
         **That’s all! You can now click the “Start discussion” button.** :smile:
-        **Please note:** Don't change text areas - they need to stay that way to be visible after creating discussion
+        
+        > **Please note**
+        > Don't change text areas - they need to stay that way to be visible after creating discussion
+        
+        ---
+        
+        > **Hey!**
+        > Don't change anything below this line!
+
   - type: textarea
     attributes:
       label:  "Copy the code block below to format your comment on the discussion thread:"
