@@ -26,17 +26,17 @@ body:
     attributes:
       label:  "Copy the code block below to format your comment on the discussion thread:"
       description: Solution template for players
-      render: html
       value: |
-        <details>
-        <summary>Description – <strong>score {characters}</strong></summary><br />
-        <!-- Has to be followed by an empty line! -->
+        ````md
+        <details> 
+        <summary>Code Source  – <strong>score {character count}</strong></summary>
+        <!-- have to be followed by an empty line! -->
 
         ```html
-        Your CSSBattles.dev code here! ⚔️
+        your cssbattles code here!
         ```
-
         </details>
+        ````
     validations:
       required: true
   - type: textarea
