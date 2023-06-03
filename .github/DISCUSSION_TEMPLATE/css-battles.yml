@@ -17,11 +17,10 @@ body:
         
         > **Please note**
         > Don't change text areas - they need to stay that way to be visible after creating discussion
+        > 
+        > Don't change anything below this line!
         
         ---
-        
-        > **Hey!**
-        > Don't change anything below this line!
 
   - type: textarea
     attributes:
