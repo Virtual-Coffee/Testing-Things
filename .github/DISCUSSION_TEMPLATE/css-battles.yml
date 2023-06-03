@@ -26,8 +26,8 @@ body:
     attributes:
       label:  "Copy the code block below to format your comment on the discussion thread:"
       description: Solution template for players
+      render: html
       value: |
-        ```html
         <details>
         <summary>Description – <strong>score {characters}</strong></summary><br />
         <!-- Has to be followed by an empty line! -->
@@ -38,7 +38,6 @@ body:
         +```
 
         </details>
-        ```
     validations:
       required: true
   - type: textarea
@@ -46,7 +45,8 @@ body:
       label: "What others will see:"
       description: Solution preview
       value: |
-        This will result in a nice hidden bit like so:<br />
+        This will result in a nice hidden bit like so:
+        
         <details>
         <summary>Description – <strong>score {characters}</strong></summary><br />
         Your CSSBattles.dev code here! ⚔️
