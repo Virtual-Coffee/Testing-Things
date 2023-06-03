@@ -32,10 +32,9 @@ body:
         <summary>Description – <strong>score {characters}</strong></summary><br />
         <!-- Has to be followed by an empty line! -->
 
-        <!-- remove + character -->
-        +```html
+        ```html
         Your CSSBattles.dev code here! ⚔️
-        +```
+        ```
 
         </details>
     validations:
